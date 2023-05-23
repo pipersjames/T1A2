@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.letterhead {
+  height: 64px;
+  background-color: #32292F;
+}
+.letterhead img {
+  height: 64px;
+}
+
+.png-links {
+  display: flex;
+  gap: 10px;
+}
+.png-links li {
+  list-style-type: none;
+}
+.png-links li img {
+  width: 64px;
+  height: 64px;
+}
+
+/* Coolors Exported Palette - https://coolors.co/32292f-575366-6e7dab-5762d5-d1e3dd */
+/* SCSS HEX *//*# sourceMappingURL=main.css.map */

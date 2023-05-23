@@ -1,0 +1,25 @@
+.letterhead {
+        height: 64px;
+        background-color: #32292F;
+        img {
+            height: 64px;
+        }
+    }
+
+
+
+
+
+
+.png-links {
+    display: flex;
+    gap: 10px;
+
+    li {
+        list-style-type: none;
+        img {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
