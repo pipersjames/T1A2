@@ -1,15 +1,16 @@
+
+/*images in top bar*/
 .letterhead {
-        height: 64px;
         background-color: #32292F;
         img {
-            height: 64px;
+            height: 48px;
         }
     }
 
 
 
 
-
+/*follow links facebook, twitter etc*/
 
 .png-links {
     display: flex;
@@ -23,3 +24,10 @@
         }
     }
 }
+
+/*landing-page photo*/
+
+.portrait {
+    width: 100%;
+}
+

@@ -5,14 +5,15 @@
   box-sizing: border-box;
 }
 
+/*images in top bar*/
 .letterhead {
-  height: 64px;
   background-color: #32292F;
 }
 .letterhead img {
-  height: 64px;
+  height: 48px;
 }
 
+/*follow links facebook, twitter etc*/
 .png-links {
   display: flex;
   gap: 10px;
@@ -25,5 +26,47 @@
   height: 64px;
 }
 
+/*landing-page photo*/
+.portrait {
+  width: 100%;
+}
+
 /* Coolors Exported Palette - https://coolors.co/32292f-575366-6e7dab-5762d5-d1e3dd */
-/* SCSS HEX *//*# sourceMappingURL=main.css.map */
+/* SCSS HEX */
+/*navigation for mobile view*/
+.navbar {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.navbar li {
+  border-bottom: solid #575366;
+  text-align: center;
+}
+.navbar a {
+  display: block;
+  padding: 10px;
+  font-size: 32px;
+}
+.navbar a:link, .navbar a:visited {
+  color: #6e7dab;
+  text-decoration: none;
+  font-weight: 700;
+}
+.navbar a:hover {
+  background-color: aliceblue;
+}
+
+.follow-container {
+  flex: 1;
+}
+.follow-container ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.landing-container {
+  flex: 1;
+}/*# sourceMappingURL=main.css.map */
