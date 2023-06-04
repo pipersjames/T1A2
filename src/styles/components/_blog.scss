@@ -1,0 +1,22 @@
+.blog-container {
+    margin: 2vw 10vw 2vw 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .blog {
+        margin: 10px;
+        h2 {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: solid $nav-bar-black;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.title {
+    display: inline-block;
+    text-align: center;
+}

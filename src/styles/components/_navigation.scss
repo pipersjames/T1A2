@@ -5,21 +5,45 @@
     list-style-type: none;
     
         li {
-            border-bottom: solid $davys-gray;
             text-align: center;
-        } 
+            border-bottom: solid $letter-head-color;
+        }  
         a {
             display: block;
-            padding: 10px;
+            padding: 10px 30px 10px 10px;
             font-size: 32px;
-        }
+            color: $letter-head-color;
+        }   
             a:link, a:visited {
-                color: $glaucous;
                 text-decoration: none;
                 font-weight: 700;    
             } 
             a:hover {
-                background-color: aliceblue;
+                text-decoration: underline;
+              }  
+}
+
+
+/*animation for hover effect */
+
+
+
+@media only screen and (min-width: 600px) {
+    .head {
+        display: flex;
+        background-color: $letter-head-color;
+        align-items: center;
+        justify-content: space-between;
+        }
+        .navbar {
+            flex-direction: row;
+            gap: 20px;
+            li {
+                border: none;
             }
+            a {
+                color: $white-default;
+            }
+        }
     }
 

@@ -1,9 +1,9 @@
 
 /*images in top bar*/
 .letterhead {
-        background-color: #32292F;
+        background-color: $letter-head-color;
         img {
-            height: 48px;
+            height: 64px;
         }
     }
 
@@ -15,12 +15,12 @@
 .png-links {
     display: flex;
     gap: 10px;
-
     li {
         list-style-type: none;
+        padding: 5px;
         img {
-            width: 64px;
-            height: 64px;
+            width: 32px;
+            height: 32px;
         }
     }
 }
@@ -28,6 +28,62 @@
 /*landing-page photo*/
 
 .portrait {
+    background-color: aliceblue;
+    border-radius: 35%;
+    width: 200px;
+}
+
+/*about me photo and blog images in about me page*/
+
+.adventure-photo {
     width: 100%;
 }
 
+.blog-image-links {
+    img {
+        height: 200px;
+        border: solid $savoy-blue;
+        border-radius: 8px;
+        transition: 1s;
+        background-color: $white-default;
+    }
+    img:hover {
+        height: 250px;
+    }
+}
+
+/*blog images on blog page*/
+.blog-container {
+    img {
+        width: 100%;
+        background-color: $white-default;
+        border-radius: 8px;
+    }
+}
+
+
+
+
+/* viewport alterations*/
+
+
+@media only screen and (min-width: 600px) {
+    .portrait {
+        width: 300px;
+    }
+    .adventure-photo {
+        width: 50%;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .portrait {
+        width: 400px;
+    }
+    .blog-container {
+        img {
+            width: 792px;
+        }
+    }
+}

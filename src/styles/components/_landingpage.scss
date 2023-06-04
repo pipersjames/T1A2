@@ -1,0 +1,87 @@
+.landing-container {
+    margin-top: 10vh;
+}
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+    gap: 20px;
+    .img-caption {
+        font-weight: 700;
+        font-size: 36px;
+    }
+}
+
+/*paragraph introduction*/
+
+.intro {
+    margin: 20px;
+    padding: 20px;
+    .intro-head {
+        font-weight: 500;
+        border-bottom: solid $letter-head-color;  
+        border-bottom-style: ridge;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        font-style: italic;
+
+    }
+    p {
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: $paragraph-background;
+        padding: 10px;
+        border-radius: 6px;
+        font-weight: 300;
+    }
+}
+
+/*buttons */
+
+.btns {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    font-weight: 800;
+    color: $white-default;
+    .lets-talk-btn {
+        border: solid $letter-head-color;
+        padding: 10px 16px;
+        color: $white-default;
+        background-color: $letter-head-color;
+        border-radius: 6px;
+    }
+    .cv-btn {
+        border: solid $letter-head-color;
+        padding: 10px 16px;
+        color: $white-default;
+        background-color: $letter-head-color;
+        border-radius: 6px;
+    }
+    a:link, a:visited {
+        text-decoration: none;
+        color: $white-default;
+    }
+    li:hover {
+        background-color: $nav-bar-black;
+    }
+}
+
+
+/*media flex for larger screen*/
+
+@media only screen and (min-width: 600px) {
+    .landing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        .intro-wrapper, .display {
+            width: 600px;
+        }
+        }
+    }

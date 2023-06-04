@@ -1,0 +1,98 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about-information {
+        order: 1;
+    }
+}
+
+.about-information {
+    text-align: center;
+    padding: 20px;
+    .about-title {
+        font-weight: 500;
+        border-bottom: solid $letter-head-color;  
+        border-bottom-style: ridge;
+        margin: 0px 20px 20px 20px;
+        padding: 20px;
+        text-align: center;
+        font-style: italic;
+    }
+    .about-paragraph {
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: $paragraph-background;
+        padding: 10px;
+        border-radius: 6px;
+        font-weight: 300;
+    }
+}
+
+/*skills section*/
+
+.skills {
+    .skill-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        padding-left: 20px;
+    }
+}
+.skills-head {
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.blog-image-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    flex-direction: column;
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a:visited, a:link{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.about-blog-title {
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+
+
+
+
+/*viewport alterations*/
+
+@media only screen and (min-width: 600px) {
+    .about {
+        flex-direction: row;
+        margin: 5vw;
+    .about-information { 
+        padding: 20px;
+        order: -1;
+    }
+}
+    .skills {
+        .skill-list {
+            grid-template-columns: repeat(3, 1fr); 
+        }
+    }
+
+    .blog-image-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+}
+

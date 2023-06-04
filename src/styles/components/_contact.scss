@@ -1,0 +1,56 @@
+
+.contact {
+    margin: 10% 10% 50px 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+        font-size: 32px;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: 500;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .input-txt {
+            background-color: $white-default;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .input-txt-message {
+            background-color: $white-default;
+            padding: 5px;
+            height: 400px;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            font-size: 32px;
+            border-radius: 8px;
+            margin-left:25%;
+            margin-right: 25%;
+            margin-top: 25px;;
+            }
+        }
+    }
+.submit-btn:hover  {
+    background-color: wheat;
+}
+
+.call-or-email {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1vw;
+    p {
+        border: solid $nav-bar-black;
+        background-color: $white-default;
+        padding: 5px;
+        border-radius: 8px;
+        margin: 1vw;
+    } 
+}
+
